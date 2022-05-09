@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -24,5 +23,11 @@
     "typescript": "^4.6.4",
     "vite": "^2.9.8",
     "vitest": "^0.12.0"
+  },
+  "lint-staged": {
+    "./**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
