@@ -2,14 +2,18 @@
   "name": "monorepo-starter",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
+    "@antfu/eslint-config": "^0.23.0",
+    "eslint": "^8.15.0",
     "typescript": "^4.6.4",
     "vite": "^2.9.8",
     "vitest": "^0.12.0"
